@@ -1,7 +1,8 @@
 import hydraModel from "@/app/models/hydramodel";
-import connections from "@/dbconnection/connections";
+// import connections from "@/dbconnection/connections";
 import { NextResponse } from "next/server";
 import bcrypt from 'bcrypt'
+import connections from "../../../../../dbconnection/connections";
 connections();
 
 export async function POST(data) {
