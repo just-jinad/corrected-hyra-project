@@ -5,6 +5,7 @@ import { NextResponse } from "next/server";
 import bcryptjs from "bcrypt"
 const jwt = require('jsonwebtoken')
 connections();
+// connections
 
 export async function POST(data){
     try{
