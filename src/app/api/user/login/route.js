@@ -1,7 +1,7 @@
 
 import { NextResponse } from "next/server";
 import bcryptjs from "bcrypt"
-import connections from "../../../../../dbconnection/connections";
+import connections from "@/dbconnection/connections";
 import hydraModel from "@/app/models/hydramodel";
 const jwt = require('jsonwebtoken')
 connections()
