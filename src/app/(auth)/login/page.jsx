@@ -19,14 +19,12 @@ const Login = () => {
     onSubmit: values => {
       // You can handle form submission here
       console.log(values);
-      axios.post('api/user/login', values)
-      .then((result) => {
-        console.log(result.data);
-        alert(result.data.message)
-
-      }).catch((err) => {
-        
-      });
+      axios.post('api/user/login', values).then((data)=>{
+        console.log(data);
+      }).catch((err)=>{
+        console.log(err);
+      })
+     
     }
   });
 
