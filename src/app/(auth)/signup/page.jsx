@@ -44,16 +44,11 @@ const Create = () => {
       onSubmit: (values) => {
         alert(JSON.stringify(values, null, 2));
         axios.post("api/user/signup", values).then((data)=>{
-          console.log(data)
-         if (data) {
-          router.push('/login')
-         }else{
-          router.push('/signup');
-         }
+          console.log(data);
         })
-          .catch((err)=>{
-            console.log(err);
-          })
+        .catch((err)=>{
+          console.log(err);
+        })
       },
     });
     console.log(formik);
