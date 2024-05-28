@@ -4,6 +4,7 @@ import Link from 'next/link';
 import Footer from '../components/Footer';
 import Navbarcom from '../components/Nav';
 import { data } from '../data/data.js';
+// import SafeHtml from '../components/SafeHtml';
 
 
 const OurTeachings = () => {
@@ -24,7 +25,9 @@ const OurTeachings = () => {
                                     <div className='md:px-11 text-white px-6 w-full'>
                                         <p className='md:px-4 text-[12px]'>{item.textCard}</p>
                                         <p className='md:px-4 text-[12px]'>{item.description}</p>
+
                                         <p className='text-[11px] md:px-4 mt-14 underline'>See more</p>
+                                        {/* <SafeHtml html={item.listText} /> */}
                                         {/* <a href='' >
                                             See more
                                         </a> */}
