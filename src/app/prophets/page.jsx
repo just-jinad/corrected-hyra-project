@@ -4,7 +4,7 @@ import Link from 'next/link';
 import Footer from '../components/Footer';
 import Navbarcom from '../components/Nav';
 import { data } from '../data/data.js';
-// import SafeHtml from '../components/SafeHtml';
+
 
 
 const OurTeachings = () => {
