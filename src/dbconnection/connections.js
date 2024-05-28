@@ -1,12 +1,12 @@
-import mongoose from 'mongoose'
-require('dotenv').config()
+// import mongoose from 'mongoose'
+// require('dotenv').config()
 
-const connections = async () => {
-    mongoose.connect(process.env.URI).then((data)=>{
-        console.log("connected", data);
-    }).catch((err)=>{
-        console.log(err);
-    })
-}
+// const connections = async () => {
+//     mongoose.connect(process.env.URI).then((data)=>{
+//         console.log("connected", data);
+//     }).catch((err)=>{
+//         console.log(err);
+//     })
+// }
 
-export default connections
+// export default connections
