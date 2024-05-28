@@ -88,7 +88,7 @@
 
 //     },
 //     {
-//         imgUrl: "https://s3-alpha-sig.figma.com/img/8771/e0c4/0e16de03db2c9d610bd05dd1a50ea26f?Expires=1715558400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=cMzxcrM5Fgx~AP-H2tUxHGc1~Qx4T3w-v7PncrADIfKJJS1BdiWj6Tgfr9CceNJ-d6ifNPu4osq-iA4t8HRrWeZe2KnMK~hTGU~Ov1bwvGCFUGkGvjIwirNQZyC8oeO8FwC9K28Bw~eO0EZuI0B890OgHUj0p8XFCSEsAk7jkIDnVLe1isLzgOqg5SuMZKmtS-rugcdp3cZFVQkEoZZgMrUUk49KhlH3LfUo3Zcb4~zpLcKZrr69bzYyW9ynBgeR189l69ir2gyiHxQ5YhMrN1js5PYvxUjw5W42odaCNbGq9Cu3s4XOeM1UJHMjegjxZjHINjwJtfal0~NLGt3GNA__",
+//         imgUrl: "https:/gitn/s3-alpha-sig.figma.com/img/8771/e0c4/0e16de03db2c9d610bd05dd1a50ea26f?Expires=1715558400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=cMzxcrM5Fgx~AP-H2tUxHGc1~Qx4T3w-v7PncrADIfKJJS1BdiWj6Tgfr9CceNJ-d6ifNPu4osq-iA4t8HRrWeZe2KnMK~hTGU~Ov1bwvGCFUGkGvjIwirNQZyC8oeO8FwC9K28Bw~eO0EZuI0B890OgHUj0p8XFCSEsAk7jkIDnVLe1isLzgOqg5SuMZKmtS-rugcdp3cZFVQkEoZZgMrUUk49KhlH3LfUo3Zcb4~zpLcKZrr69bzYyW9ynBgeR189l69ir2gyiHxQ5YhMrN1js5PYvxUjw5W42odaCNbGq9Cu3s4XOeM1UJHMjegjxZjHINjwJtfal0~NLGt3GNA__",
 //         textCard: "Du’a: ",
 //         description: "Du’a is an essential part of the daily lives of every Muslims",
 //         id: 5,
