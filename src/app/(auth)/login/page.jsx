@@ -4,6 +4,7 @@ import { useFormik } from 'formik';
 import * as Yup from 'yup';
 import React from 'react';
 import Footer from '../../components/Footer';
+import Image from "next/image";
 import axios from 'axios';
 
 const Login = () => {
@@ -30,8 +31,8 @@ const Login = () => {
 
   return (
     <>
-      <div className="flex justify-center">
-        <div className="grid grid-cols-1 pb-20 md:grid-cols-2 gap-8">
+      <div className="flex justify-center ">
+        <div className="grid grid-cols-1 pb-20 md:grid-cols-2 gap-12">
 
           <div className="p-4">
             <form onSubmit={formik.handleSubmit} className='shadow-lg md:p-10 md:-10 mt-32 p-5'>
@@ -87,8 +88,14 @@ const Login = () => {
 
           {/* Second Column (Hidden on small screens) */}
           <div className="hidden md:block p-4">
+          <Image
+              className=" md:h-96 md:block hidden md:mt-24 "
+                    src={'/image 249.png'}
+                    width={200}
+                    height={200}
+                    />
             {/* Content of the second column */}
-            <img className='md:h-96  mt-32' src="/image 249.png" alt="" />
+            {/* <img className='md:h-96  mt-32' src="/image 249.png" alt="" /> */}
           </div>
         </div>
       </div>

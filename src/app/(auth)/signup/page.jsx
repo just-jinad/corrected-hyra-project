@@ -5,6 +5,7 @@ import { useFormik } from "formik";
 import * as Yup from "yup";
 import Footer from "@/app/components/Footer";
 import axios from "axios";
+import Image from "next/image";
 import { useRouter } from "next/navigation";
 const Create = () => {
   let router  = useRouter();
@@ -176,22 +177,35 @@ const Create = () => {
                 type="button"
                 className=" mt-3 border py-4 !border-[#FFCD4B] flex justify-center text-black font-bold w-full md:py-2 px-4 rounded"
               >
-                <img
+                  <Image
+               className='h-4 rounded'
+                    src={'/Google__G__logo.svg.png'}
+                    width={20}
+                    height={50}
+                    />
+                {/* <img
                   className="h-4 "
                   src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/768px-Google_%22G%22_logo.svg.png"
                   alt=""
-                />
+                /> */}
                 <p className="ms-3 text-sm"> Continue with google </p>
               </button>
             </form>
           </div>
         </div>
         <div className="md:w-1/2 items-center flex justify-center flex-col-1 h-full">
-          <img
-            className=" md:h-96 md:block hidden md:mt-24 "
+        <Image
+              className=" md:h-96 md:block hidden md:mt-24 "
+                    src={'/image 249.png'}
+                    width={200}
+                    height={200}
+                    />
+          {/* <img
+            
+            
             src="https://s3-alpha-sig.figma.com/img/bc69/f30c/e637c7e28dfdcabce58f80b39b093527?Expires=1715558400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=EfZHF-Bd-6JdaCS49~ZBKjuapeV~IB3B80-8UaSX7XT2S2mRhwWaaiBQcwCCVaEdw~3iEwjohWKM7379Yao9GzqX~mAO53hWGwQVFosQfzXCC3LR9-iLCwhqvTTDBUHEl2zlLAORIegBbV3j1s10qb~SjyUg4LJdXAEAkVpuNdCbok1NLXvy4NfQGlQRt8deW3n9tK3KR8bzUBVLEmb3Wq4VCwdYbSNrOFVcKOF651GLlgiZztJ9GlW9kOxLVxNz5qiOyrAcpJZGZ4quIac2gRLPhFo-shrLtkfKyw1IK5Enxz9ngJ0YT49VSjrzPQh8BIPdhueoGodQrhxBEo7bsg__"
             alt=""
-          />
+          /> */}
         </div>
       </div>
       <div className="md:block hidden fixed bottom-0 w-full">

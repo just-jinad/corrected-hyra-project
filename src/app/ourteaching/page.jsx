@@ -3,6 +3,7 @@ import React from 'react';
 import Link from 'next/link';
 import Footer from '../components/Footer';
 import Navbarcom from '../components/Nav';
+import Image from 'next/image'
 import { data } from '../data/data.js';
 
 const OurTeachings = () => {
@@ -18,13 +19,19 @@ const OurTeachings = () => {
                         {data.map((item, i) => (
                             <div key={i} className={`cursor-pointer bg-[${item.color}] h-[64vh] rounded mx-auto`}>
                                 <Link href={`/teach/${item.id}`}>
-                                    <img  className='h-40 mx-auto rounded w-40 mb-2 mt-5' src={item.imgUrl} alt='' />
+                                    <Image
+                                    className='h-40 mx-auto rounded w-40 mb-2 mt-5'
+                                    src={item.imgUrl}
+                                    width={200}
+                                    height={200}
+                                    />
                                     <div className='md:px-11 text-white px-6 w-full'>
                                         <p className='md:px-4 text-[12px]'>{item.textCard}</p>
                                         <p className='md:px-4 text-[12px]'>{item.description}</p>
-                                        <a href='' className='text-[11px] md:px-4 mt-14 underline'>
-                                            See more
-                                        </a>
+                                        
+                                        <Link href='' className='text-[11px] md:px-4 mt-14 underline'>
+                                        See more
+                                        </Link>
                                     </div>
                                 </Link>
                             </div>

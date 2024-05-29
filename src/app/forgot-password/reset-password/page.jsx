@@ -1,6 +1,6 @@
 "use client";
 import Footer from "@/app/components/Footer";
-// import Image from "next/image";
+import Image from 'next/image'
 import React, { useState } from "react";
 
 const ResetPassword = () => {
@@ -73,13 +73,13 @@ const ResetPassword = () => {
             {/* Second Column (Hidden on small screens) */}
             <div className="hidden md:block">
             <div className="p-6">
-              {/* <Image
-                className="mx-auto w-full"
-                width={200}
-                height={200}
-                src="/image 250.png"
+            <Image
+                className="mx-auto "
+                width={400}
+                height={100}
+                src="/image 250 (1).png"
                 alt="Illustration"
-              /> */}
+              />
             </div>
           </div>
         </div>
