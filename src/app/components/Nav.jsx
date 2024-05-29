@@ -6,7 +6,7 @@ const Navbarcom = () => {
   return (
     <div>
     <Navbar fluid rounded className="fixed bg-white w-full">
-      <Navbar.Brand href="https://flowbite-react.com">
+      <Navbar.Brand href="https://flowbiteact.com">
         <span className="self-center text-2xl font-semibold font-inter text-blue-700">Hyra</span>
       </Navbar.Brand>
       <div className="flex md:order-2">
