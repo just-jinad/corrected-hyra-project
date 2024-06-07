@@ -6,8 +6,10 @@ import React from 'react';
 import Footer from '../../components/Footer';
 import Image from "next/image";
 import axios from 'axios';
+import {useRouter} from 'next/navigation'
 
 const Login = () => {
+  let router = useRouter()
   const formik = useFormik({
     initialValues: {
       email: '',
@@ -22,6 +24,9 @@ const Login = () => {
       console.log(values);
       axios.post('api/user/login', values).then((data)=>{
         console.log(data);
+        if(data){
+          router.push('/ourteaching')
+        }
       }).catch((err)=>{
         console.log(err);
       })

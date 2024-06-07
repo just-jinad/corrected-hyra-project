@@ -43,9 +43,12 @@ const Create = () => {
         .required("Password cannot be empty."),
       }),
       onSubmit: (values) => {
-        alert(JSON.stringify(values, null, 2));
+        // alert(JSON.stringify(values, null, 2));
         axios.post("api/user/signup", values).then((data)=>{
           console.log(data);
+          if(data){
+            router.push('/login')
+          }
         })
         .catch((err)=>{
           console.log(err);
