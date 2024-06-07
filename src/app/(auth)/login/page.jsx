@@ -7,6 +7,7 @@ import Footer from '../../components/Footer';
 import Image from "next/image";
 import axios from 'axios';
 import {useRouter} from 'next/navigation'
+import { toast } from "react-toastify";
 
 const Login = () => {
   let router = useRouter()
@@ -25,10 +26,20 @@ const Login = () => {
       axios.post('api/user/login', values).then((data)=>{
         console.log(data);
         if(data){
-          router.push('/ourteaching')
+          toast.success("user login successful ", {
+            hideProgressBar: false,
+          })
+          setTimeout(() => {
+            router.push('/ourteaching') 
+          }, 5000);
         }
       }).catch((err)=>{
         console.log(err);
+        if (err) {
+          toast.error("An error has occured", {
+            hideProgressBar: true,
+          })
+        }
       })
      
     }

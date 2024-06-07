@@ -7,6 +7,8 @@ import Footer from "@/app/components/Footer";
 import axios from "axios";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
+import { toast } from "react-toastify";
+
 const Create = () => {
   let router  = useRouter();
   const formik = useFormik({
@@ -46,8 +48,13 @@ const Create = () => {
         // alert(JSON.stringify(values, null, 2));
         axios.post("api/user/signup", values).then((data)=>{
           console.log(data);
-          if(data){
-            router.push('/login')
+          if(data.status == 200){
+            toast.success("Sign up successful", {
+              hideProgressBar: false
+            })
+            setTimeout(() => {
+              router.push('/login')
+            }, 5000);
           }
         })
         .catch((err)=>{
